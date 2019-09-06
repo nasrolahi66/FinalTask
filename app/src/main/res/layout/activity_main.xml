@@ -28,10 +28,21 @@
             android:textSize="20dp"/>
 
     </LinearLayout>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/txtCityName"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:id="@+id/txtCityName"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgIcon"/>
+
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,10 +72,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -85,44 +92,19 @@
                 android:text="........"
                 android:textSize="25sp"
                 />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Wind"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_weight="0.4"
-                android:layout_height="match_parent"
 
-                />
-
-            <TextView
-                android:id="@+id/txtWind"
-                android:text="........"
-                android:textSize="25sp"
-                android:layout_width="0dp"
-                android:layout_weight="0.6"
-                android:layout_height="match_parent"/>
-
-        </LinearLayout>
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/recycler"
             android:padding="20dp"
             />
-
-
-
-
-
-
-
+</LinearLayout>
 </LinearLayout>
